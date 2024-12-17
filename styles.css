@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('C:\Users\dmitr\Downloads\1722599751_new_preview_maxresdefault.jpg') no-repeat center center fixed; /* Замените на ваше изображение */
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    animation: fadeIn 1s; /* Анимация появления страницы */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    max-width: 800px; /* Увеличиваем ширину контейнера */
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон для контейнера */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #00000;
+    animation: slideIn 0.5s; /* Анимация заголовка */
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services li {
+    background: #e9ecef;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: transform 0.3s, box-shadow 0.3s; /* Добавляем анимацию для блока */
+}
+
+.services li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Анимация кнопки */
+	text-decoration: none;
+}
+img {
+    max-width: 100%; /* Изображение не будет шире контейнера */
+    height: auto; /* Высота будет подстраиваться автоматически */
+	
+}
+
+
+.service-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.portfolio, .reviews, .experience, .contact, .social {
+    margin-top: 30px; /* Увеличиваем отступы между блоками */
+}
+
+.gallery, .review-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery img, .review-gallery img {
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s; /* Анимация для изображений */
+}
+
+.gallery img:hover, .review-gallery img:hover {
+    transform: scale(1.05); /* Увеличение изображения при наведении */
+}
+
+.experience-content {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Отступ сверху для контента о мастере */
+}
+
+.experience-image {
+    width: 200px; /* Увеличиваем ширину изображения мастера */
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: transform 0.3s; /* Анимация для изображения мастера */
+}
+
+.experience-image:hover {
+    transform: scale(1.05); /* Увеличение изображения мастера при наведении */
+}
+
+.contact p, .social p {
+    margin: 5px 0;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.social-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Анимация для кнопок соцсетей */
+}
+
+.telegram {
+    background-color: #0088cc;
+}
+
+.vk {
+    background-color: #4a76a8;
+}
+
+.social-button:hover {
+    opacity: 0.8;
+    transform: translateY(-2px); /* Подъем кнопки при наведении */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
